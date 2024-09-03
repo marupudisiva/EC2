@@ -8,10 +8,6 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "subnet_id" {
-  description = "subnet"
-  default     = "EC2subnet"
-}
 
 variable "key_name" {
   description = "Name of the existing EC2 key pair"
