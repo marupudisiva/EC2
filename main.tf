@@ -25,11 +25,12 @@ resource "aws_instance" "example" {
   instance_type = var.instance_type
   key_name      = var.key_name
   subnet_id     = "EC2subnet" # Replace with your subnet ID
-}
+
 
   tags = {
     Name = var.name
   }
+
 
   user_data = <<-EOF
               #!/bin/bash
