@@ -24,6 +24,7 @@ resource "aws_instance" "example" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = var.instance_type
   key_name      = var.key_name
+  subnet_id     = "EC2subnet" # Replace with your subnet ID
 
   tags = {
     Name = var.name
